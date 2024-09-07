@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountUp || With JQuery</title>
+    <style>
+	body{margin:0px;padding:0px;}
+        .increement{
+            text-align: center;
+             font-size: 5rem;
+             color: crimson;
+             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .happy{
+            text-align: center;
+            font-size: 4rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: crimson;
+
+        }
+		.like{
+		  background:darkblue !important;
+		  color:white;
+		};
+		.menu_wrapper{
+			background:red !important;
+		}
+		.menu{
+			background:#333;
+			position:fixed;
+			top:0px;
+			left:0px;
+			width:200px;
+			height:100%;
+			margin:0px;
+			color:white;
+			padding:0px;
+			transition:0.3s;
+		}
+		.menu li{
+			list-style-type:none;
+			padding:10px 20px;
+			font-family:tahoma;
+			font-size:19px;
+			cursor:pointer
+		}
+		.showSideNav{
+		  width:50px !important;
+		}
+		#show{margin:10px 300px;}
+    </style>
+</head>
+<body>
+
+    <div class="increement">
+        <span>M</span><span class="incree">0</span><span>+</span>
+    </div>
+    <div class="happy">Happy Client</div>
+		<h2 id="show"></h1>
+
+    <div style=" margin:100px auto;width:400px;height:300px;background:red;cursor:pointer;color:white;" id="clickDiv"></div>
+	<h1 style="width:600px;margin:auto;color:crimson" id="showData"></h1>
+	<button id="clickButton" style="margin:50px 390px;background:none;border:1px solid silver; padding:10px 10px;cursor:pointer;"><span>0</span> Like</button>
+	<div class="menu_wrapper">
+		 <ul class="menu">
+		<li>1. <span>Ashik</span></li>
+		<li>2. <span>Hannan</span></li>
+		<li>3. <span>Mamun</span></li>
+		<li>4. <span>Limon</span></li>
+		<li>5. <span>Hasan</span></li>
+		<li>6. <span>Moznu</span></li>
+	 </ul>
+	</div>
+	
+	<h3 class="wrap"></h3>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="count.js"></script>
+	<script>
+		$(document).ready(function(){
+		// EVENT WHICH EVENT TYPE
+		  $("#clickDiv").on("mousedown mouseover mouseout",function(){
+			 var clickname = event.type;
+			 if(clickname=="mousedown"){
+				$("h1").html("Mouse down Right Now");
+			 }else if(clickname=="mouseover"){
+				$("h1").html("Mouse Hover Right Now");
+			 }else if(clickname=="mouseout"){
+				$("h1").html("Mouse Out Right Now");
+			 }
+		  })
+		 // EVENT WHICH EVENT TYPE
+		  $("#clickButton").on("mousedown",function(){
+			$("#clickButton").toggleClass("like");
+			 location.href="#kiddo";
+			 $(".menu").toggleClass("showSideNav");
+			 $("li span").each(function(){
+				$(this).toggle();
+			 });
+		  })
+		 // EVENT TARGET EVENT TYPE
+		 $(document).on("click",function(event){
+		   $("#show").html("Target Tag : "+ event.target.nodeName)
+		 });
+		 $("#clickButton").on("click",function(){
+			$(".wrap").wrapInner();
+		  })
+		})
+	</script>
+    
+</body>
+</html>

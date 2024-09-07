@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Projects with Ashik</title>
+    <style>
+        .container {
+            width: 1170px;
+            margin: auto;
+            position: relative;
+
+        }
+
+        .image-gallery {
+            position: relative;
+            overflow: hidden;
+            border: 4px solid #ddd;
+
+        }
+
+        .preview-image {
+            width: 100%;
+            height: 600px;
+            position: relative;
+            overflow: hidden;
+        }
+        .preview-image img{
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+*{
+    transition: all 0.5s ease-in-out;
+}
+        .thumbnail-image {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 1rem;
+            position: relative;
+            margin: 1rem 0rem;
+        }
+
+        .thumb {
+            border: 2px solid #fff;
+            cursor: pointer;
+            position: relative;
+            
+        }
+        .thumb img{
+            opacity: .2;
+            border: 3px solid transparent;
+        }
+        .active img{
+            opacity: 1;
+            border: 3px solid rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-gallery">
+            <div class="preview-image">
+                <img src="img/picture6.jpeg" class="img-fluid" alt="">
+            </div>
+            <div class="thumbnail-image">
+                <div class="thumb active">
+                    <img src="img/picture6.jpeg" alt="" >
+                </div>
+                <div class="thumb">
+                    <img src="img/picture7.jpeg" alt="" >
+                </div>
+                <div class="thumb">
+                    <img src="img/picture5.jpeg" alt="">
+                </div>
+                <div class="thumb">
+                    <img src="img/picture8.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      
+    //   Dom Selection 
+    const thumbs = document.querySelectorAll(".thumb img");
+    thumbs.forEach(function(thumb){
+        thumb.addEventListener("click",function(){
+        thumbs.forEach(e => e.parentElement.classList.remove("active"));
+        thumb.parentElement.classList.add("active");
+           const imgSrc = thumb.getAttribute("src");
+           document.querySelector(".preview-image img").src=imgSrc;
+        })
+    })
+      
+    </script>
+</body>
+
+</html>

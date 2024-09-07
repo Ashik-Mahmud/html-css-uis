@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+}
+.container
+{
+    width: 1170px;
+    margin: auto;
+}
+.teamMembar{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: 0.8s;
+    border: 1px solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.teamMembar:hover .social-icon{
+    left: 0%;
+}
+.imgBox img{
+    width: 100%;
+}
+.social-icon{
+    width: 15%;
+    background: #0056f9;
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.4s;
+    left: -15%;
+}
+.social-icon .fa{
+    display: block;
+}
+.imgBox {
+    position: absolute;
+}
+.fa{
+    font-weight: 550;
+    font-size: small;
+}
+
+/* MY BOOTSTRAP CLASS  */
+
+.text-check{
+    color: #71bc42 !important;
+}
+.button-radius-primary{
+    background: #007bff !important;
+    padding: 12px 35px !important;
+    border-radius: 25px !important;
+    color: white !important;
+    border: none !important;
+    margin-top: 25px !important;
+  
+}
+.button-radius-secondary{
+    background: #6c757d !important;
+    padding: 12px 35px !important;
+    border-radius: 25px !important;
+    color: white !important;
+    border:none !important;
+    margin-top: 25px !important;
+  
+}
+.button-radius-primary:hover{
+    background: black !important;
+}
+.text-decoration-line-through{
+    text-decoration: line-through !important;
+}
+.text-soft{
+    color: rgb(196, 195, 195);
+}
+.font-size-30{
+    font-size: 40px !important;
+    font-weight: 900 !important;
+    
+}
+.ph-5{
+    padding: 100px !important;
+}

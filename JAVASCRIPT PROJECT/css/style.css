@@ -1,0 +1,240 @@
+.main {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    background: black;
+    color: white;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+    text-align: center;
+}
+
+.container h1 {
+    font-family: monospace;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 9rem;
+    text-shadow: 2px 3px 0px rgb(67, 185, 24);
+
+}
+
+.selctedColor {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: white;
+}
+
+.showP {
+    bottom: 0px !important;
+}
+
+.MyUl {
+    position: relative;
+    overflow: hidden;
+    margin-right: 15px;
+    bottom: -100px;
+    transition: .7s;
+}
+
+.MyUl li {
+    display: inline-block;
+    list-style: none;
+}
+
+.MyUl li button {
+    padding: 3px;
+    border: 1px solid transparent;
+    color: white;
+    cursor: pointer;
+
+}
+
+.btn-style {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 5px;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-style:hover {
+    background: white;
+    color: black;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+#main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right top, #04b3ae, #00bd84);
+    align-items: center;
+    justify-content: center;
+}
+
+#main .form-box {
+    width: 350px;
+    height: 420px;
+    background: #fff;
+    border-radius: 0.1rem;
+    /* border: 1px solid #fede; */
+    box-shadow: 1px 1px 2px #4fcca6;
+    padding: .5rem 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.button-group {
+    width: 250px;
+    height: auto;
+    margin: 1rem auto;
+    box-shadow: 0px 0px 2px 0px #4fcca6;
+    border-radius: 5rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#login-toggle-btn,
+#register-toggle-btn {
+    background: transparent;
+    width: 125px;
+    padding: .5rem 1rem;
+    color: #333;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 5rem;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#toggler {
+    background: linear-gradient(to right top, #04b3ae, #00bd84);
+    width: 125px;
+    height: 100%;
+    position: absolute;
+    border-radius: 5rem;
+    left: 0px;
+    top: 0px;
+    transition: left 0.3s;
+}
+
+/* Form Item  */
+
+/* Login Form  */
+#form-part {
+    position: relative;
+    margin: 3rem 0rem;
+}
+
+#login-form {
+    position: relative;
+    transition: left 0.5s;
+}
+
+.input-field {
+    width: 100%;
+    margin: .5rem 0rem;
+    padding: .5rem 0rem;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ddde;
+    font-size: 0.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.4s;
+    background: transparent;
+}
+
+.input-field:focus {
+    border-color: #04b3ae;
+}
+
+.check-field {
+    margin: 1rem 0rem;
+}
+
+form label {
+    color: rgb(89, 89, 93);
+    font-size: 0.870rem;
+    user-select: none;
+}
+
+button.input-btn {
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    display: block;
+    background: linear-gradient(to right top, #04b3ae, #00bd84);
+    outline: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1rem 0rem;
+}
+
+form a {
+    text-decoration: none;
+    color: #04b3ae;
+    display: inline-block;
+}
+
+.login-form,
+.register-form {
+    position: absolute;
+    box-sizing: border-box;
+    width: 300px;
+    transition: left 0.5s;
+}
+
+.register-form {
+    left: 400px;
+}
+
+.active {
+    color: white !important;
+    font-weight: bold;
+}
+
+.theme-btn button {
+    border: 1px solid transparent;
+    background: linear-gradient(to right top, #04b3ae, #00bd84);
+    color: white;
+    display: block;
+    width: 40px;
+    height: 40px;
+    /* border-radius: 50%; */
+    position: absolute;
+    right: -1px;
+    top: 68px;
+    font-size: 0.7rem;
+    cursor: pointer;
+    margin: 1rem 0rem;
+    outline: none;
+}
+
+/* Theme Options  */
+.dark-theme{
+    background: linear-gradient(to right top, #0b4769, #540a0a)  !important;
+}

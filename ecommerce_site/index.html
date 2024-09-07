@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code with Ashik </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/css/all.min.css">
+    <style>
+        *,
+        *::after,
+        *::before {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fff;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            overflow: auto;
+        }
+        img{
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }
+        .section{
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: space-between;
+            width: 1140px;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+        @media (max-width:1140px){
+            .section{
+            width: auto;
+        }
+        }
+        .section .box{
+            margin: 2rem 1rem;
+            position: relative;
+            box-shadow: 0rem 0rem 4rem 0.1rem rgba(0,0,0,0.1);
+            cursor: grab;
+           flex: 1 1 340px; /*  Stretching: */
+           flex: 0 1 340px;  /*No stretching:*/
+        }
+        .box .box-img{
+            height: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .box:hover .box-img .overlay{
+            height: 0%;
+        }
+        .box-img img{
+            filter: grayscale(0);
+        }
+        .box-img .overlay{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0);
+            left: 0px;
+            top: 0px;
+            border-bottom: 2px solid #222;
+            transition: all 0.4s ease;
+            backdrop-filter: grayscale(1);
+            -moz-backgrop-filter: grayscale(1);
+            -webkit-backgrop-filter: grayscale(1);
+            z-index: 1;
+           
+        }
+
+        .box .box-content{
+            position: absolute;
+            background: #333;
+            width: 90%;
+            left: 50%;
+            transform: translateX(-50%) ;
+            bottom: -30px;
+            color: #fff;
+            text-align: center;
+            z-index: 2;
+            padding: .4rem 0rem;
+       
+        }
+        .box:hover .box-content{
+            max-height: 100px;
+        }
+        .box-content h3{
+            font-size: 1.3rem;
+            margin: 0px;
+            font-family: tahoma;
+            
+        }
+        .box-content span{
+            font-size: .8rem;
+            font-family: tahoma;
+            font-weight: lighter;
+            letter-spacing: 1px;
+            color: rgb(216, 216, 216);
+        }
+        .box-img .social-link{
+            transition: transform .5s ease;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            transform: translateX(80px) skewX(40deg);
+
+        }
+        .box:hover .box-img .social-link{
+           transform: translateX(0px) skewX(0deg);
+           transition-delay: .5s;
+        }
+        .box-img .social-link a{
+            display: block;
+            position: relative;
+            color: #222;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            border-radius: 0%;
+        }
+        .box-img .social-link a:nth-child(1){
+            color: #4267B2;
+        }
+        .box-img .social-link a:nth-child(2){
+            color: #C13584;
+        }
+        .box-img .social-link a:nth-child(3){
+            color: #2867B2;;
+        }
+        .box-img .social-link a:nth-child(4){
+            color: #1DB954;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <section class="section">
+
+
+        <!-- Single Box -->
+        <div class="box">
+            <div class="box-img">
+                <img src="images/person/person_3.jpg" class="person" alt="person_3">
+                <div class="overlay"></div>
+                <div class="social-link">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-spotify"></i></a>
+                </div>
+            </div>
+            <div class="box-content">
+                <h3>Marlon T.</h3>
+                <span>-Web Designer,Amzduck.dev</span>
+                
+            </div>
+        </div>
+        <!-- End  -->
+        <!-- Single Box -->
+        <div class="box">
+            <div class="box-img">
+                <img src="images/person/person_5.jpg" class="person" alt="person_3">
+                <div class="overlay"></div>
+                 <div class="social-link">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-spotify"></i></a>
+
+                </div>
+            </div>
+            <div class="box-content">
+                <h3>Marlon T.</h3>
+                <span>-Web Designer,Amzduck.dev</span>
+               
+            </div>
+        </div>
+        <!-- End  -->
+        <!-- Single Box -->
+        <div class="box">
+            <div class="box-img">
+                <img src="images/person/person_4.jpg" class="person" alt="person_3">
+                <div class="overlay"></div>
+                 <div class="social-link">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-spotify"></i></a>
+
+                </div>
+            </div>
+            <div class="box-content">
+                <h3>Marlon T.</h3>
+                <span>-Web Designer,Amzduck.dev</span>
+               
+            </div>
+        </div>
+        <!-- End  -->
+
+    </section>
+
+
+    <script>
+        var boxes = document.querySelectorAll(".box");
+        boxes.forEach(e = function(box){
+            box.addEventListener("mouseover",function(){
+               
+            })
+        })
+    </script>
+</body>
+
+</html>

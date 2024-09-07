@@ -1,0 +1,48 @@
+.admin-login-form{
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+    background: white;
+}
+.no-radius{
+    border-radius: 0px;
+}
+input{
+    box-shadow: none;
+}
+.primary-menu li{
+    padding: 10px 15px;
+}
+.primary-menu li:hover{
+    background:rgb(0, 50, 116);
+    
+}
+.active-menu{
+    background:rgb(0, 50, 116) !important;
+    
+
+}
+
+
+.design {
+    position: absolute;
+    font-size: 5rem;
+    width: 300px;
+    height: 300px;
+    background: rgb(168, 166, 166);
+    top: -196px;
+    right: -226px;
+    transform: rotate(47deg);
+    text-align: center;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.font-family{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+table td, table th{
+    border-top: 0px !important;
+}

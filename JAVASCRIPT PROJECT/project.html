@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project || with Javascript</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .project-area-item li {
+      list-style-type: none;
+      color: white;
+      padding: 10px;
+    }
+
+    .project-area-item li:hover {
+      background: tomato;
+    }
+
+    .project-area-item li a {
+      text-decoration: none;
+      color: white;
+
+    }
+
+    #showRecord {
+      overflow: hidden;
+      display: none;
+    }
+
+    #loading_images {
+      display: none;
+    }
+
+    #error {
+      display: none;
+      color: red;
+      font-family: arial;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="container">
+      <h1>WE ARE GOING TO SEE A JAVASCRIPT PROJECT</h1>
+    </div>
+    <button onclick="showPlease();" class="btn-style">Change Color</button>
+    <div class="selctedColor">
+
+      <ul class="MyUl ">
+        <li><button class="btn1 btn" style="background:black;border: 1px solid white;">Normal</button></li>
+        <li><button class="btn2 btn" style="background: red;">RED</button></li>
+        <li><button class="btn3 btn" style="background: green;">GREEN</button></li>
+        <li><button class="btn4 btn" style="background: yellow;color: black;">YELLOW</button></li>
+        <li><button class="btn5 btn" style="background: crimson;">CRIMSON</button></li>
+        <li><button class="btn6 btn" style="background: violet;">VIOLET</button></li>
+        <li><button class="btn7 btn" style="background: blue;">Blue</button></li>
+        <li><button class="btn8 btn" style="background: dodgerblue;">Dodger Blue</button></li>
+      </ul>
+    </div>
+  </div>
+  <br><br><br>
+  <div style="width:400px;margin:auto;z-index:34;position:relative;">
+    <!-- Entry Area Start -->
+    <form id="form">
+      <input type="text" id="seler_name" placeholder="Customar Full Name"
+        style="padding:10px;width:100%; box-sizing:border-box;margin:10px 0px;">
+      <select id="product_name" style="padding:10px;width:100%; box-sizing:border-box;margin:10px 0px;">
+        <option selected value="">Select Product</option>
+        <option value="Laptop">Laptop</option>
+        <option value="Computer">Computer</option>
+      </select>
+      <input type="number" id="qty" placeholder="Quantity"
+        style="padding:10px;width:100%; box-sizing:border-box;margin:10px 0px;">
+      <input type="number" id="pz" placeholder="Price"
+        style="padding:10px;width:100%; box-sizing:border-box;margin:10px 0px;">
+      <input type="number" id="cm" placeholder="Comission (%)"
+        style="padding:10px;width:100%; box-sizing:border-box;margin:10px 0px;">
+      <button onclick="submitProduct();" type="submit" id="loader">Print Copy</button>
+    </form>
+    <!-- Entry Area End  -->
+  </div>
+  <div id="loading_images" style="width:600px;margin:auto;margin-top:-100px;">
+    <img width="100%" src="loader.gif" alt="">
+  </div>
+  <div id="showRecord" style="width:600px;margin:50px auto;">
+    <h1 style="text-align:center;font-size:30px; font-family:arial; text-decoration:underline;">Deatils Of Product</h1>
+    <samp style="font-size:25px;margin:10px 0px;display:block;"><b>Seller name :</b> <span id="s_name"></span></samp>
+
+    <table border="1px" style="margin:auto;width: 600px;font-size:25px;font-family:arial;">
+      <tr>
+        <td><b>Product name :</b> </td>
+        <td id="p_name"></td>
+      </tr>
+      <tr>
+        <td><b>Product Quantity :</b> </td>
+        <td id="p_qty"></td>
+      </tr>
+      <tr>
+        <td><b>Product Price :</b> </td>
+        <td id="p_price"></td>
+      </tr>
+      <tr>
+        <td><b>Comission (%)</b></td>
+        <td id="p_taxs"></td>
+      </tr>
+      <tr>
+        <td><b>Real Price</b></td>
+        <td id="p_r_price"></td>
+      </tr>
+    </table>
+
+  </div>
+  <h2 style="text-align:center;" id="error">Filled Out Required Filed</h2>
+
+  <!-- Nice Register And Login Form  -->
+  <main id="main">
+    <div class="form-box">
+      <!-- Button Group  -->
+      <div class="button-group">
+        <div id="toggler"></div>
+        <button id="login-toggle-btn" class="active"  onclick="login()">Login</button>
+        <button id="register-toggle-btn" onclick="register()">Register</button>
+      </div>
+      <!-- End  -->
+      <!-- Theme Settings  -->
+      <div class="theme-btn">
+        <button class="theme-settings-btn" onclick="themeSettings()">Dark</button>
+      </div>
+      <!-- End  -->
+      <!-- Form Part  -->
+      <div id="form-part">
+        <!-- Login Form  -->
+        <div class="login-form">
+          <form action="#">
+            <input type="text" placeholder="Username" required class="input-field">
+            <input type="password" placeholder="Password" required class="input-field">
+            <input type="checkbox" id="check-remember" required class="check-field">
+            <label for="check-remember">Remember Me</label>
+            <button class="input-btn">Login</button>
+          </form>
+        </div>
+        <!-- End  -->
+        <!-- Login Form  -->
+        <div class="register-form">
+          <form action="#">
+            <input type="text" placeholder="Your Name" required class="input-field">
+            <input type="email" placeholder="Email" required class="input-field">
+            <input type="password" placeholder="Password" required class="input-field">
+            <input type="checkbox" id="check-term" required class="check-field">
+            <label for="check-term">I Agree with your <a href="#">Terms & Conditions</a></label>
+            <button class="input-btn register-btn">Register</button>
+          </form>
+        </div>
+        <!-- End  -->
+      </div>
+
+
+      <!-- End  -->
+    </div>
+  </main>
+  <!-- End Register And Login Form  -->
+
+
+
+
+  <script src="js/project.js"></script>
+  <script>
+
+    function login(){
+        var  x = document.querySelector('.register-form');
+        var y = document.querySelector('.login-form');
+        var z = document.querySelector('#toggler');
+        var loginBtn = document.querySelector('#login-toggle-btn');
+        var registerBtn = document.querySelector('#register-toggle-btn');
+        loginBtn.classList.add('active');
+        registerBtn.classList.remove('active');
+         z.style.left='0px';
+         y.style.left='0px';
+         x.style.left="400px";
+    }
+      function register(){
+        var  x = document.querySelector('.register-form');
+        var y = document.querySelector('.login-form');
+        var z = document.querySelector('#toggler');
+        var loginBtn = document.querySelector('#login-toggle-btn');
+        var registerBtn = document.querySelector('#register-toggle-btn');
+        registerBtn.classList.add('active');
+        loginBtn.classList.remove('active');
+         z.style.left='125px';
+         y.style.left='-400px';
+         x.style.left="0px";
+      
+    }
+
+    function themeSettings(){
+      var main = document.querySelector("#main");
+      var z = document.querySelector('#toggler');
+      var inputBtn = document.querySelector('button.input-btn');
+      var registerBtn = document.querySelector('.register-btn');
+      var themeSettingsBtn = document.querySelector('.theme-settings-btn');
+      main.classList.toggle('dark-theme');
+      z.classList.toggle('dark-theme');
+      inputBtn.classList.toggle('dark-theme');
+      registerBtn.classList.toggle('dark-theme');
+      themeSettingsBtn.classList.toggle('dark-theme');
+    if(themeSettingsBtn.classList.contains('dark-theme')){
+      themeSettingsBtn.innerHTML="Light";
+    }else{
+      themeSettingsBtn.innerHTML="Dark";
+    }
+    }
+
+
+
+  </script>
+
+</body>
+
+</html>

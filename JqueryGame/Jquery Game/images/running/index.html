@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Player Something Like</title>
+    <style>
+      body{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+        position: relative;
+
+      }
+    .player{
+          display: block;
+          position: relative;
+          width: 217px;
+          overflow: hidden;
+      }
+      .player::after{
+          content: "";
+          width: 100%;
+          height: 40px;
+          background: url(grass.png) ;
+          background-size: inherit;
+          background-repeat: repeat;
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          animation: moving 1s  infinite;
+      }
+      @keyframes moving{
+          0%{
+              left: 0px;
+          }
+
+          100%{
+              left: -100px;
+          }
+      }
+      .player img{
+          width: 150px;
+          height: 100%;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="player"><img src="frame-1.png" ></div>
+            <button onclick="speedInterval();">Speed up</button>
+      
+    </div>
+    <script>
+        
+               function runningPlayer(){
+                    var src = document.querySelector('.player img').getAttribute('src');
+                if(src=='frame-1.png'){
+                   document.querySelector('.player img').src="frame-2.png";
+                }else if(src=='frame-2.png'){
+                     document.querySelector('.player img').src="frame-3.png";
+                }else if(src=='frame-3.png'){
+                    document.querySelector('.player img').src="frame-4.png";
+                }else if(src=='frame-4.png'){
+                    document.querySelector('.player img').src="frame-5.png";
+                }else if(src=='frame-5.png'){
+                    document.querySelector('.player img').src="frame-6.png";
+                }else if(src=='frame-6.png'){
+                    document.querySelector('.player img').src="frame-1.png";
+                }
+
+               }
+         var startInterval = setInterval(runningPlayer,100)
+        function speedInterval(){
+          setInterval(runningPlayer,100)
+        }
+        
+    </script>
+</body>
+</html>

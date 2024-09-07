@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down || With Ashik mahmud</title>
+    <link rel="stylesheet" href="css/count.css">
+</head>
+<body>
+    <div class="design">
+        <h1>I WILL EARN MONEY IN THIS TIME</h1>
+        <h2>(ENSHAALLAH)</h2>
+        
+        <div id="getting-started"></div>
+    </div>
+    
+
+
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script type="text/javascript">
+
+        $('#getting-started').countdown('2021/05/01', function(event) {
+          $(this).html(event.strftime(
+              '<div class="count"><span>%D</span><span>Days</span></div><div class="count"><span>%H</span><span>Hours</span></div><div class="count"><span>%M</span><span>Minutes</span></div><div class="count"><span>%S</span><span>Seconds</span></div>'
+              ));
+        });
+
+      </script>
+</body>
+</html>

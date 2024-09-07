@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard :: HTML CSS Bootstrap</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="fonts/css/all.min.css" rel="stylesheet">
+	
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+ <div class="dashboard bg-dark-dark">
+
+	
+	<nav class="navbar navbar-dark navbar-expand-md border-bottom border-white">
+	 <button onclick="showNavbar();" class="mr-4 navbar-brand bg-dark-dark border-0"><i class="fa fa-bars"></i></button>
+	<a class="mr-4 navbar-brand" href=""><i class="fa fa-home"></i></a>
+		<div class="container">
+			<a href="" class="navbar-brand"><i class="fab fa-apple h1"></i> <span class="h3 mt-n3"></span></a>
+		</div>
+			<div class="">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a href="" class="nav-link" ><i class="fa fa-bell"></i> Notifications</a>
+					</li>
+					<li class="nav-item dropdown" data-toggle="dropdown">
+                        <a href="" class="nav-link" ><i class="fa fa-user-circle"></i> User Details</a>
+                        <div class="dropdown-menu mr-n5">
+                            <a class="dropdown-item" href="#">Profile Picture</a>
+                            <a class="dropdown-item" href="#">View Profile</a>
+                            <a class="dropdown-item" href="#">Log out</a>
+                        </div>
+					</li>
+				</ul>
+			</div>
+		
+	</nav>
+	<div class="dashboard-content bg-dark-dark user-select-none accordion" id="accordion-1">
+		<div class="">
+			<ul class="navbar-nav navbar-pills flex-column navbar-dark pt-4">
+			
+				<li   class="nav-item pl-4"><a class="nav-link h4 text-white" href=""><i data-placement="left" data-html="true" title="Dashboard" data-tooltip="tooltip" class="fab fa-delicious mr-2"></i> <span class="menu-text"> Dashboard  </span></a></li>
+				
+				<li data-target="#showSubMenu" data-toggle="collapse"   class="nav-item pl-4 mb-0 nav-link h4 text-white cursor-pointer">
+					
+					<i  class="fa fa-list mr-2" data-placement="left" data-html="true" title="User List" data-tooltip="tooltip"></i> <span class="menu-text"> User List  </span>
+
+				</li>
+				<div id="showSubMenu" class="collapse" data-parent="#accordion-1">
+					<div class="card bg-dark-dark no-radius">
+						<div >
+							<ul class="navbar-nav  m-0">
+								<li class="nav-item pl-4"><a class="nav-link font-weight-bold text-white" href="#">User List-1</a></li>
+								<li class="nav-item pl-4"><a class="nav-link font-weight-bold text-white" href="#">User List-2</a></li>
+								<li class="nav-item pl-4"><a class="nav-link font-weight-bold text-white" href="#">User List-3</a></li>
+								<li class="nav-item pl-4"><a class="nav-link font-weight-bold text-white" href="#">User List-4</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<li   class="nav-item pl-4 "><a class="nav-link h5 text-white" href=""><i data-placement="left" data-html="true" title="THERMOMETER" data-tooltip="tooltip" class=" fas fa-chart-area mr-2"></i> <span class="menu-text"> thermometer </span> </a></li>
+				
+				<li data-target="#showSubMenu1" data-toggle="collapse"   class="nav-item pl-4 mb-0 nav-link h4 text-white cursor-pointer">
+					
+					<i data-placement="left" data-html="true" title="shopping" data-tooltip="tooltip" class="fab fa-accusoft mr-2"></i> <span class="menu-text"> Shopping  </span>
+
+				</li>
+				<div id="showSubMenu1" class="collapse" data-parent="#accordion-1">
+					<div class="card bg-dark-dark no-radius">
+						<div >
+							<ul class="navbar-nav  m-0">
+								<li class="nav-item pl-4"><a class="nav-link font-weight-bold text-white" href="#">Shopping List-1</a></li>
+								<li class="nav-item pl-4"><a class="nav-link font-weight-bold text-white" href="#">Shopping List-2</a></li>
+								<li class="nav-item pl-4"><a class="nav-link font-weight-bold text-white" href="#">Shopping List-3</a></li>
+								<li class="nav-item pl-4"><a class="nav-link font-weight-bold text-white" href="#">Shopping List-4</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<li  class="nav-item pl-4 "><a class="nav-link h5 text-white" href=""><i data-placement="left" data-html="true" title="numeric" data-tooltip="tooltip" class=" fas fa-laptop mr-2"></i> <span class="menu-text"> numeric </span> </a></li>
+				
+				<li   class="nav-item pl-4 "><a class="nav-link h5 text-white" href=""><i data-placement="left" data-html="true" title="backward" data-tooltip="tooltip" class="fas fa-database mr-2"></i> <span class="menu-text"> backward  </span></a></li>
+				
+			
+				<li data-target="#showSubMenu2" data-toggle="collapse"   class="nav-item pl-4 mb-0 nav-link h4 text-white cursor-pointer">
+					
+					<i data-placement="left" data-html="true" title="suitcase" data-tooltip="tooltip" class="fas fa-industry mr-2"></i> <span class="menu-text"> suitcase  </span>
+
+				</li>
+				<div id="showSubMenu2" class="collapse" data-parent="#accordion-1">
+					<div class="card bg-dark-dark no-radius">
+						<div >
+							<ul class="navbar-nav  m-0">
+								<li class="nav-item pl-4"><a class="nav-link font-weight-bold text-white" href="#">Suitcase List-1</a></li>
+								<li class="nav-item pl-4"><a class="nav-link font-weight-bold text-white" href="#">Suitcase List-2</a></li>
+								<li class="nav-item pl-4"><a class="nav-link font-weight-bold text-white" href="#">Suitcase List-3</a></li>
+								<li class="nav-item pl-4"><a class="nav-link font-weight-bold text-white" href="#">Suitcase List-4</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<li   class="nav-item pl-4 "><a class="nav-link h5 text-white" href=""><i  data-placement="left" data-html="true" title="superscript" data-tooltip="tooltip" class=" fas fa-dolly-flatbed mr-2"></i> <span class="menu-text"> superscript  </span></a></li>
+				
+				<li   class="nav-item pl-4 "><a class="nav-link h5 text-white" href=""><i data-placement="left" data-html="true" title="tachometer" data-tooltip="tooltip" class=" fas fa-cubes mr-2"></i> <span class="menu-text"> tachometer </span> </a></li>
+				
+				<li   class="nav-item pl-4 "><a class="nav-link h5 text-white" href=""><i data-placement="left" data-html="true" title="Edit" data-tooltip="tooltip" class=" fas fa-edit mr-2"></i> <span class="menu-text"> Edit </span> </a></li>
+				
+				<li   class="nav-item pl-4 "><a class="nav-link h5 text-white" href=""><i data-placement="left" data-html="true" title="Log out" data-tooltip="tooltip" class="fas fa-sign-out-alt mr-2"></i> <span class="menu-text"> Log out </span> </a></li>
+			</ul>
+		</div>
+	</div>
+ </div>
+
+ <div style="width: 1563px;margin:auto 42px auto auto; margin-top: 9px;
+">
+
+
+	<!-- All Text Write Here  -->
+
+
+
+
+ </div>
+ <script src="js/jquery-3.5.1.min.js"></script>
+ <script src="js/popper.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script>
+	$(document).ready(function(){
+       $("[data-tooltip='tooltip']").tooltip()
+    })
+	function showNavbar(){
+	var navshow = document.querySelector(".dashboard-content");
+
+        navshow.classList.toggle("active");
+
+        setTimeout(function() {
+			var selectText = document.getElementsByClassName("menu-text");
+			for(i=0; i<selectText.length; i++){
+				selectText[i].classList.toggle("text");
+			}
+	
+        }, 150);
+        
+   
+    
+	}
+ 
+ </script>
+</body>
+</html>

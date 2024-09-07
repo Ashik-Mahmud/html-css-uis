@@ -1,0 +1,197 @@
+body{
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+/* Header Design  Start*/
+.background{
+    width: 100%;
+    background: rgb(66, 97, 10);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    box-shadow: 1px 1px 30px rgba(87, 87, 87, 0.466);
+    margin-bottom: 3rem; 
+}
+.background-content{
+    width: 1100px;
+    margin: auto;
+}
+.leftSideContent{
+    padding: 20vh 0px;
+}
+.btn-buynow{
+    padding: 10px 50px;
+    margin-top: 30px;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 1px solid silver;
+    transition: .5s;
+    cursor: pointer;
+}
+.btn-buynow:hover{
+    background: white;
+    color: black;
+}
+/* Header Design  End*/
+.heading_title{
+    text-align: center;
+    display: block;
+}
+.heading_title h1{
+    color: rgb(81, 121, 9);
+    text-align:center;
+}
+.heading_title small{
+        color: #7fc500;
+        font-size: 1rem;
+        display: inline-block;
+        margin: .5rem 0rem;
+        position: relative;
+
+}
+.heading_title small::after{
+    content: "";
+    width: 48px;
+    height: 3px;
+    position: absolute;
+    background: #7fc500;
+    display: inline-block;
+    top: 53%;
+    right: -50%;
+    box-sizing: border-box;
+}
+.heading_title small::before {
+    content: "";
+    width: 48px;
+    height: 3px;
+    position: absolute;
+    background: #7fc500;
+    display: inline-block;
+    top: 53%;
+    left: -50%;
+    box-sizing: border-box;
+}
+/* Services Area  */
+.searvice_block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.service_box{
+    margin: 20px 35px;
+    text-align: center;
+    color: rgb(81, 121, 9);
+    box-shadow: 1px 1px 20px rgba(97, 146, 5, 0.198);
+    padding: 14px;
+}
+/* Clients SEction Design  */
+.clients_section{
+    margin-top: 4rem;
+    color: rgb(81, 121, 9);
+    padding: 5rem 0rem;
+    background: rgba(243, 242, 242, 0.205);
+}
+.clients_photo{
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(81, 121, 9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 1rem;
+    overflow: hidden;
+
+}
+.clients_photo img{
+    max-width: 100%;
+}
+.clients_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.clients_box{
+    margin: 20px 35px;
+    text-align: center;
+    /* box-shadow: 1px 1px 25px rgba(66, 97, 10, 0.295); */
+    padding: 30px;
+}
+/* Contact Area  */
+
+.contact_area{
+    padding: 3rem 0rem;
+}
+.contact_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 82px;
+    color: rgb(81, 121, 9);
+}
+.contact_content .leftSide{
+    width: 500px;
+    margin-right: 5rem;
+}
+.contact_content .rightSide{
+    width: 400px;
+    margin-right: 5rem;
+}
+.signUpForm{
+    margin-top: 1rem;
+}
+.signUpForm input{
+ padding: 7px 13px;
+ border: 1px solid rgb(81, 121, 9);
+}
+.signUpForm input[type='submit']{
+    cursor: pointer;
+    background: rgb(81, 121, 9);
+    border:1px solid rgb(81, 121, 9);
+    color: white;
+    font-weight: bold;
+}
+.right_form{
+    margin-top: 2rem;
+}
+.right_form input,
+.right_form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid rgb(81, 121, 9);
+}
+.submitBtn{
+    padding: 10px 40px;
+    background: rgb(81, 121, 9);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+::placeholder{
+    color: rgb(81, 121, 9);
+}
+footer{
+    background:rgb(81, 121, 9);
+    text-align:center;
+    color: white;
+    padding: 15px 0px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}

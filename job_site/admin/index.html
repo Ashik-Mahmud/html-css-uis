@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <!-- Bootstrap CSS Link  -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Uikit CSS Link  -->
+    <link rel="stylesheet" href="../css/uikit.min.css">
+     <!-- Fonts Awesome CSS Link  -->
+     <link rel="stylesheet" href="../fonts/css/all.min.css">
+     <!-- Custom CSS Link  -->
+     <link rel="stylesheet" href="../css/admin.css">
+     <style>
+         body{
+             display: flex;
+             height: 100vh;
+             background: rgb(233, 233, 233);
+             justify-content: center;
+             align-items: center;
+         }
+     </style>
+</head>
+<body>
+    
+
+    <div class="admin-login-form">
+        <img src="../images/logo.png" width="100%" alt="">
+        <form action="login_core.php" method="POST">
+            <div class="form-group">
+                <label for="username">User Name</label>
+                <input type="text" class="form-control no-radius " placeholder="User Name" required id="username" autocomplete="off"/>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control no-radius " placeholder="Password" required id="password" autocomplete="off"/>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="uk-button uk-button-secondary" value="Login"/>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <!-- jQuery CDN Link Js -->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap JS Link  -->
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Uikit JS Link  -->
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+</body>
+</html>

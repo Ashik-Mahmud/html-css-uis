@@ -1,0 +1,29 @@
+.dashboard-content{
+	width:300px;
+	height:100%;
+	position:fixed;
+	transition:0.5s;
+	
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+	
+}
+.no-radius {
+	border-radius: 0px !important;
+}
+.cursor-pointer{
+	cursor: pointer;
+}
+.user-select-none{
+	user-select: none;
+}
+.bg-dark-dark{ background: #70a6df; }
+.active{
+	width:70px !important;
+}
+.text{
+	display: none !important;
+
+}
+.navbar-nav li{ text-transform:uppercase; }
+.navbar-nav li:hover{ background:#5596db; }

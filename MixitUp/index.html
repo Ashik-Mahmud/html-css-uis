@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MixitUP || With Plugin</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .border-radius{
+            border-radius: 20px !important;
+        }
+        .no-radius{
+            border-radius: none !important;
+        }
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-7">
+                <button class="btn btn-primary border-radius px-3 mr-3 active" data-filter="all">All</button>
+                <button class="btn btn-primary border-radius mr-3 px-3" data-filter=".icon">Icon</button>
+                <button class="btn btn-primary border-radius mr-3 px-3" data-filter=".web">Web</button>
+                <button class="btn btn-primary border-radius mr-3 px-3" data-filter=".apps">Apps</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mix web col-md-4 m-4 p-5  bg-primary mt-5  text-light">
+                <h1>Web</h1>
+            </div>
+            <div class="mix apps col-md-4 p-5 m-4  bg-secondary mt-5  text-light">
+                <h1>Apps</h1>
+            </div>
+            <div class="mix icon col-md-4 p-5  m-4 bg-danger mt-5  text-light">
+                <h1>Icon</h1>
+            </div>
+            <div class="mix web col-md-4 p-5  m-4 bg-info mt-5  text-light">
+                <h1>Web</h1>
+            </div>
+            <div class="mix apps col-md-4 p-5  m-4 bg-dark mt-5  text-light">
+                <h1>Apps</h1>
+            </div>
+            <div class="mix icon col-md-4 p-5  m-4 bg-success mt-5  text-light">
+                <h1>Icon</h1>
+            </div>
+            <div class="mix apps col-md-4 p-5  m-4 bg-warning mt-5  text-light">
+                <h1>apps</h1>
+            </div>
+            <div class="mix web col-md-4 p-5  m-4 bg-light mt-5 border text-dark">
+                <h1>Web</h1>
+            </div>
+           
+        </div>
+    </div>
+    
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script>
+       $(document).ready(function(){
+            var mixer = mixitup('.container');
+        })      
+    </script>
+</body>
+</html>

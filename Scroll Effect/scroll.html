@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Behavior || with Ashik</title>
+    <link rel="stylesheet" href="css/scroll.css">
+</head>
+<body>
+    <section>
+        <div class="skewed"></div>
+    </section>
+    <span style="padding: 500px;"></span>
+    <script>
+        var section = document.querySelector(".skewed");
+        window.addEventListener("scroll",function(){
+            var value = -10 + window.scrollY/60;
+            section.style.transform="skewY("+value+"deg)"
+        });
+    </script>
+</body>
+</html>

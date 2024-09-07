@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="School Site School Mangement Something Like that">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Ashik Mahmud ">
+    <title>School Website</title>
+     <!-- Bootstrap CSS Link  -->
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+     <!-- Uikit CSS Link  -->
+     <link rel="stylesheet" href="../css/uikit.min.css">
+     <!-- Font Awesome  -->
+     <link rel="stylesheet" href="../fonts/css/all.min.css">
+     <!-- Custom CSS  -->
+     <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="bg-light" >
+
+       <div class="container">
+        <div class="user_add " style="height: 100vh;display: flex;justify-content: center;align-items: center;">
+            <div class="row">
+                <div class="col-md-5">
+                    
+                    <form action="user_add.php" method="POST" style="width: 400px;background: white;padding: 20px;">
+                        <cite class=" text-muted"><b>নোটিশ : </b> তথ্যগুলো অবশ্যই ইংরেজীতে ব্যবহার করুন</cite>
+                        <h1 class="font-weight-bold text-uppercase h3 mb-3">Add User </h1>
+                        <div class="form-group">
+                            <label for="fname">First Name</label>
+                            <input type="text" class="form-control no-radius" placeholder="First Name" name="fname" id="fname">
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Last Name</label>
+                            <input type="text" class="form-control no-radius" placeholder="Last Name" name="lname" id="lname">
+                        </div>
+                        <div class="form-group">
+                            <label for="username">User Name</label>
+                            <input type="text" class="form-control no-radius" placeholder="User Name" name="username" id="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="text" class="form-control no-radius" placeholder="Password" name="password" id="password">
+                        </div>
+                        <div class="form-group">
+                            <label for="usr_role">User Role</label>
+                          <select name="usr_role" id="usr_role" class="custom-select">
+                                <option value="Admin">Admin</option>
+                                <option value="Moderator">Moderator</option>
+                          </select>
+                        </div>
+                        <div class="form-group">   
+                            <a href="user_modify.html" class="uk-button uk-button-secondary">Go Back</a>
+                            <input type="submit" class="uk-button uk-button-secondary" value="Save" name="save" >
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+       </div>
+    <!-- jQuery File Path  -->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap Js LInk  -->
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Uikit JS LInk  -->
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+</body>
+</html>

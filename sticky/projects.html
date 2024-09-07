@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects :</title>
+    <style>
+        .font{
+            font-family: '', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+    
+</head>
+<body>
+     <select style="padding: 10px;width: 200px;margin:auto;display: block;" name="" id="selectbox">
+         <option value="1">Dhaka</option>
+         <option value="2">Kulana</option>
+         <option value="3">Barishal</option>
+         <option value="4">Dinajpur</option>
+     </select>
+     <h3 class="showValue"></h3>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#selectbox").change(function(){
+                var valueOfSelect = $(this).val();
+                $(".showValue").html(valueOfSelect);
+            })
+        })
+    </script>
+</body>
+</html>

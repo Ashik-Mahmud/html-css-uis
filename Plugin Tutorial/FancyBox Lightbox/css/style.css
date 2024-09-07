@@ -1,0 +1,15 @@
+.ImgArea{
+    display: flex;
+    position: relative;
+}
+.imgBlock{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+}
+.imgBlock img{
+    width: 100%;
+    height: 100%;
+}

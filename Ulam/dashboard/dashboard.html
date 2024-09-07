@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashobard ~ Change Everything Over here</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+    <main class="grid grid-y">
+        <section class="dashboard">
+            <header>
+                <div class="primary-menu">
+                    <ul>
+                        <li  class="active"><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="settings.html">Settings</a></li>
+                        <li><a href="logout.html">Logout</a></li>
+                    </ul>
+                    <a href="register.html">Register User</a>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <form action="/" method="POST">
+                    <!-- Ui Image  -->
+                    <div class="ui-image">
+                        <h4>1. Portfolio Image</h4>
+                        <input type="file" class="file d-block my-1" value="ashik.jpg" name="portfolio-img">
+                        <img src="../assets/images/brown-haired-girl-in-white-sleeveless-dress-standing-beside-756453.jpg" class="img-fluid" alt="useranem">
+                    </div>
+                    <!-- Ui Image End  -->
+                    <!-- Ui Subtitle  -->
+                    <div class="ui-subtitle">
+                        <h4>2. Portfolio Subtitle</h4>
+                        <div class="input-group">
+                            <div>
+                                <label for="text">After Text</label>
+                                <input type="text" class="subtitle input" name="subtitle" value="Welcome" id="text">
+                            </div>
+                            <div>
+                                <label for="text">Color Text</label>
+                                <input type="text" class="colort-text input" name="color-text" value="Ulam" id="text">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ui Subtitle End  -->
+                    <!-- Ui Subtitle  -->
+                    <div class="ui-subtitle">
+                        <h4>3. Portfolio Animated Text</h4>
+                        <div>
+                            <div>
+                                <label for="text">Animated After Text</label>
+                                <input type="text" class="subtitle input" name="ani_after_text" value="I'm" id="text" >
+                            </div>
+                            <div>
+                                <label for="text">Animated Text </label>
+                                <small class="d-block">[You need use , (commas) as seperator each animated text]</small>
+                                <textarea name="" id="" cols="30" class="input" rows="5"
+                                    placeholder="Animated Text">Freelancer,Web Developer,Web Designer</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ui Subtitle End  -->
+                    <!-- Ui Subtitle  -->
+                    <div class="ui-subtitle">
+                        <h4>4. Portfolio Description</h4>
+                        <div>
+                            <div>
+                                <label for="text">Description Text </label>
+                                <textarea name="" id="" cols="30" class="input" rows="8"
+                                    placeholder="Animated Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam maiores natus vero voluptate numquam necessitatibus itaque odio. Aspernatur, minima quae!</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ui Subtitle End  -->
+                    <!-- Ui Subtitle  -->
+                    <div class="ui-subtitle">
+                        <h4>5. Portfolio Button Info</h4>
+                        <div class="input-group">
+                            <div>
+                                <label for="text">Button Text</label>
+                                <input type="text" class="subtitle input" name="subtitle" value="Download CV" id="text">
+                            </div>
+                            <div>
+                                <label for="text">Button Link</label>
+                                <input type="url" class="colort-text input" name="color-text" value="https://google.com"
+                                    id="text">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ui Subtitle End  -->
+
+                    <div class="button">
+                        <button type="submit" class="input">Update Info</button>
+                    </div>
+
+
+                </form>
+
+
+            </div>
+
+
+        </section>
+    </main>
+
+
+</body>
+
+</html>

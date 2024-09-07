@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="fonts/css/all.min.css">
+    <link rel="stylesheet" href="css/cal.css">
+</head>
+<body>
+  
+    <div class="container">
+        <div class="calculator-box">
+            <div class="calculator">
+               
+                <input  type="number" id="first-filed">
+                <input  type="number" id="second-filed">
+                <select name="" id="selected" style="width:92%;padding:8px; margin:10px 0px;">
+                    <option selected>select</option>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input style="width: 92%;" type="number" id="result">
+               <div class="button-area">
+              <button onclick="result();" style="padding: 6px 14px;border-radius: 3px;">Result</button>
+              <button  style="padding: 6px 14px;border-radius: 3px;" onclick="reset();">Reset</button>
+         
+      
+               </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="js/cal.js"></script>
+</body>
+</html>

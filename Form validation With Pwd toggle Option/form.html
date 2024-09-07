@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with  Password Toggle option  </title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        form{
+            width: 280px;
+            margin: 25% auto;
+            padding: 25px;
+            border: 1px solid rgb(5, 177, 62);
+            box-sizing: border-box;
+            font-family: sans-serif;
+            border-radius: 6px;
+            position: relative;
+            user-select: none;
+        }
+        form h2{
+            color: rgb(2, 151, 22);
+        }
+        form input{
+            width: 100%;
+            padding: 8px;
+            border-radius: 3px;
+            border: 1px solid rgb(16, 172, 16);
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            outline: none;
+            color: rgb(6, 129, 68);
+            caret-color: rgb(0, 0, 0);
+        }
+        ::placeholder{
+            color: rgb(7, 139, 18);
+        }
+        button{
+            padding: 8px 18px;
+            border: none;
+            background-color: rgb(7, 155, 27);
+            color: white;
+            outline: none;
+            cursor: pointer;
+        }
+        button:active{
+            background-color: rgb(88, 0, 88);
+        }
+        .toggleOption{
+            position: absolute;
+            cursor: pointer;
+            color: rgb(3, 165, 57);
+            left: 230px;
+            bottom:82px;
+        }
+        .toggleOption span{
+            font-size: 13px;
+        }
+        .hide{
+            display: none;
+        }
+        .error1,.error2{
+            background-color: rgba(255, 0, 0, 0.164);
+            padding: 5px;
+            margin-top: -20px;
+            font-size: 13px;
+            color: rgb(255, 0, 0);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="welcome.html" target="_blank" method="GET" class="loginForm">
+        <h2>Login Form</h2>
+        <input type="text" autocomplete="off" placeholder="User Name" name="user" class="user">
+        <div class="error1"></div>
+        <input type="password" autocomplete="off" placeholder="Password" name="pwd" class="pwd">
+        <div  onclick="clickbtn();" class="toggleOption">
+            <span class="show"><i class="fa fa-eye"></i></span>
+            <span class="hide"><i class="fa fa-eye-slash"></i></span>
+        </div>
+        <div class="error2"></div>
+
+       
+        <button type="submit">Login</button>
+    </form>
+
+    <script src="toggle.js"></script>
+
+</body>
+</html>

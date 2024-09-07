@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid </title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: tahoma;
+            box-sizing: border-box;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #fff;
+        }
+
+        .container {
+            /* width: 1170px; */
+            margin: auto;
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(3fr, 1fr));
+            grid-auto-rows: minmax(200px, auto);
+            grid-gap: 1rem;
+        }
+
+        .container .box {
+            position: relative;
+            background: rgb(0, 149, 175);
+            color: #eee;
+            padding: 2rem;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container .box:nth-child(odd) {
+            background: rgb(20, 179, 219);
+        }
+
+        .container .box:nth-child(1) {
+            grid-column: span 2;
+            grid-row: span 1;
+
+        }
+
+        .container .box:nth-child(2) {
+            grid-column: span 1;
+            grid-row: span 4;
+
+        }
+
+        .container .box:nth-child(3) {
+            grid-column: span 1;
+            grid-row: span 2;
+
+        }
+
+        .container .box:nth-child(4) {
+            grid-column: span 1;
+            grid-row: span 2;
+
+        }
+
+        .container .box:nth-child(5) {
+            grid-column: span 1;
+            grid-row: span 1;
+
+        }
+
+        .container .box:nth-child(6) {
+            grid-column: span 1;
+            grid-row: span 1;
+
+        }
+
+        .container .box:nth-child(7) {
+            grid-column: span 3;
+
+
+        }
+
+        .formFooter.f6 {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Box 1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita eligendi, assumenda, nihil delectus
+                doloremque et, natus ut aut perferendis totam voluptates? Ut cupiditate facere dolores recusandae id
+                voluptas aliquid nostrum.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita eligendi, assumenda, nihil delectus
+                doloremque et, natus ut aut perferendis totam voluptates? Ut cupiditate facere dolores recusandae id
+                voluptas aliquid nostrum.</p>
+        </div>
+        <div class="box">
+            <h3>Box 2</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita eligendi, assumenda, nihil delectus
+                doloremque et, natus ut aut perferendis totam voluptates? Ut cupiditate facere dolores recusandae id
+                voluptas aliquid nostrum.</p>
+        </div>
+        <div class="box">
+            <h3>Box 3</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita eligendi, assumenda, nihil delectus
+                doloremque et, natus ut aut perferendis totam voluptates? Ut cupiditate facere dolores recusandae id
+                voluptas aliquid nostrum.</p>
+        </div>
+        <div class="box">
+            <h3>Box 4</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita eligendi, assumenda, nihil delectus
+                doloremque et, natus ut aut perferendis totam voluptates? Ut cupiditate facere dolores recusandae id
+                voluptas aliquid nostrum.</p>
+        </div>
+        <div class="box">
+            <h3>Box 5</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita eligendi, assumenda, nihil delectus
+                doloremque et, natus ut aut perferendis totam voluptates? Ut cupiditate facere dolores recusandae id
+                voluptas aliquid nostrum.</p>
+        </div>
+        <div class="box">
+            <h3>Box 6</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita eligendi, assumenda, nihil delectus
+                doloremque et, natus ut aut perferendis totam voluptates? Ut cupiditate facere dolores recusandae id
+                voluptas aliquid nostrum.</p>
+        </div>
+        <div class="box">
+            <h3>Box 7</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita eligendi, assumenda, nihil delectus
+                doloremque et, natus ut aut perferendis totam voluptates? Ut cupiditate facere dolores recusandae id
+                voluptas aliquid nostrum.</p>
+        </div>
+    </div>
+   
+
+    <div class="container">
+        <form action="https://www.jotform.com/assign/211035710582446/211035303003028" method="POST">
+            <input type="text" placeholder="Name" name="name">
+            <input type="email" placeholder="Email" name="email">
+            <input type="submit" value="Send">
+        </form>
+    </div>
+
+
+</body>
+
+</html>

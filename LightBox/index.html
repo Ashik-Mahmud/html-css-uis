@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Box || With JQuery Plugin</title>
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <style>
+        ul li{
+            list-style-type: none;
+            width: 300px;
+            height: 190px;
+            float: left;
+            position: relative;
+            overflow: hidden;
+        }
+        ul li img{
+            width: 100%;
+            height: 100%;
+            margin: 10px;
+            cursor: pointer;
+            
+        }
+        ul li:hover .decs{
+            opacity: 1;
+            z-index: 1;
+        }
+        ul{
+            width: 1200px;
+            margin: auto;
+        }
+        h1{
+            text-align: center;
+            font-size: 4rem;
+            font-family: cursive;
+            color: brown;
+        }
+        .decs{
+            position: absolute;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgba(0, 0, 0, 0.384);
+            width: 100%;
+            height: 100%;
+            top: 10px;
+            right: 0;
+            left: 10px;
+            opacity: 0;
+            z-index: -1;
+            transition: .6s;
+            pointer-events: none;
+        }
+        .decs h3{
+            color: white;
+            line-height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Light Box Practice</h1>
+    <ul>
+        <li>
+            <a href="images/picture1.jpeg"  data-title="First image" data-lightbox="example">
+           
+            <img src="images/picture1.jpeg" alt="picture1">
+            </a>
+            <div class="decs">
+                <h3>Our Team</h3>
+            </div>
+        </li>
+        <li>
+            <a href="images/picture2.jpg" data-lightbox="example">
+            <img src="images/picture2.jpg" alt="picture2">
+            </a>
+            <div class="decs">
+                <h3>Our Team</h3>
+            </div>
+        </li>
+        <li>
+            <a href="images/picture3.jpg" data-lightbox="example">
+            <img src="images/picture3.jpg" alt="picture3">
+            </a>
+            <div class="decs">
+                <h3>Our Team</h3>
+            </div>
+        </li>
+        <li>
+            <a href="images/picture4.jpg" data-lightbox="example">
+            <img src="images/picture4.jpg" alt="picture4">
+            </a>
+            <div class="decs">
+                <h3>Our Team</h3>
+            </div>
+        </li>
+        <li>
+            <a href="images/picture5.jpg" data-lightbox="example">
+            <img src="images/picture5.jpg" alt="picture5">
+            </a>
+            <div class="decs">
+                <h3>Our Team</h3>
+            </div>
+        </li>
+        <li>
+            <a href="images/picture6.jpg" data-lightbox="example">
+            <img src="images/picture6.jpg" alt="picture6">
+            </a>
+            <div class="decs">
+                <h3>Our Team</h3>
+            </div>
+        </li>
+        <li>
+            <a href="images/picture7.png" data-lightbox="example">
+            <img src="images/picture7.png" alt="picture7">
+            </a>
+            <div class="decs">
+                <h3>Our Team</h3>
+            </div>
+        </li>
+        <li>
+            <a href="images/picture8.jpg" data-lightbox="example">
+            <img src="images/picture8.jpg" alt="picture8">
+            </a>
+            <div class="decs">
+                <h3>Our Team</h3>
+            </div>
+        </li>
+        <li>
+            <a href="images/picture9.jpg" data-lightbox="example">
+            <img src="images/picture9.jpg" alt="picture9">
+            </a>
+            <div class="decs">
+                <h3>Our Team</h3>
+            </div>
+        </li>
+        <li>
+            <a href="images/picture10.jpg" data-lightbox="example">
+            <img src="images/picture10.jpg" alt="picture10">
+            </a>
+            <div class="decs">
+                <h3>Our Team</h3>
+            </div>
+        </li>
+        <li>
+            <a href="images/picture12.jpeg" data-lightbox="example">
+            <img src="images/picture12.jpeg" alt="picture10">
+            </a>
+            <div class="decs">
+                <h3>Our Team</h3>
+            </div>
+        </li>
+        <li>
+            <a href="images/picture12.jpg" data-lightbox="example">
+            <img src="images/picture12.jpg" alt="picture10">
+            </a>
+            <div class="decs">
+                <h3>Our Team</h3>
+            </div>
+        </li>
+    </ul>
+    <!-- VIDEO LIGHT BOX OPEN SYSTEM -->
+    <a data-lightbox="video_Example" href="">
+        <button>OPEN VIDEO</button>
+    </a>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.slider{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    box-sizing: border-box;
+
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.slider .sliderItem{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.4s;
+    background: black;
+}
+.sliderItem.show
+{
+    opacity: 1;
+}
+.controlar{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background-color: white;
+    padding: 4px;
+    box-sizing: border-box;
+    border-radius: 15px 15px 0px 0px;
+    opacity: 0;
+}
+.slider:hover .controlar{
+    opacity: 1;
+}
+input{
+cursor: pointer;
+}
+.desc{
+    position: absolute;
+    width:1000px;
+    background: rgba(0, 0, 0, 0.158);
+    padding: 25px;
+    top: 20%;
+    z-index: 1;
+    animation: a 1s ease 1;
+}
+@keyframes a {
+    0%{
+        top: -100%;
+    }
+    100%{
+        top: 20%;
+    }
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.desc h1{
+    font-size: 3rem;
+    color: rgb(227, 252, 0);
+}
+.desc h3{
+    font-size: 2rem;
+    color: rgb(158, 226, 0);;
+}
+.desc p{
+    font-size: 20px;
+    color: rgb(189, 189, 189);
+}
+.desc button{
+    width: 300px;
+    padding: 8px 0;
+    font-size: 20px;
+    background: rgb(252, 137, 7);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+.desc button:hover{
+    background: #7ca024;
+    border: 1px solid #7ca024;
+}
+.hide{
+    top: -100%;
+    transition: 1s;
+}
+.hide1{
+    transition: 1s;
+}
+.aga{
+    top: 20%;
+}
+.aga1{
+    top: -100%;
+}
+label{
+    width: 120px;
+    height: 5px;
+    background: red;
+}
